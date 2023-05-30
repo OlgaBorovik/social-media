@@ -1,2 +1,13 @@
-@use 'globals';
-@use 'components';
+@import './components/card';
+@import './components/header';
+@import './components/overview';
+@import './components/toggle';
+
+@import './globals/boilerplate';
+@import './globals/colors';
+@import './globals/fonts';
+@import './globals/layout';
+@import './globals/typography';
+
+// @import './utils/breackpoint';
+// @import './utils/functions';
