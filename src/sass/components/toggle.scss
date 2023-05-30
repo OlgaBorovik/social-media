@@ -1,0 +1,49 @@
+@use '../utils' as *;
+
+.toggle-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-text{
+    font-size: rem(14);
+    color: var(--text-color2);
+    font-weight: 700;
+    @include breackpoint(medium){
+        margin-right: 13px;
+    }
+}
+
+.toggle{
+    position: relative;
+    border: none;
+    background: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
+    height: rem(24);
+    width: rem(48);
+    border-radius: 12px;
+    cursor: pointer;
+
+    &.active{
+        background: var(--toggle);
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: var(--card-bg);
+        top: 50%;
+        left: 3px;
+        transform: translateY(-50%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &.active::before{
+        left: calc(100% - 18px - 3px);
+        background-color: var(--card-bg);
+    }
+
+
+}

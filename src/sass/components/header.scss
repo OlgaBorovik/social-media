@@ -1,0 +1,47 @@
+@use '../utils' as *;
+
+.header{
+    margin-bottom: 40px;
+    padding-top: 36px;
+    position: relative;
+    @include breackpoint(medium){
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(36);
+        margin-bottom: 46px;
+        padding-top: 0;
+    }
+    &__box{
+        margin-bottom: 41px;
+        @include breackpoint(medium){
+            margin-bottom: 0;
+        }
+        &::after{
+            content: ' ';
+                height: 1px;
+                width: calc(100% - 50px);
+                background-color: var(--text-color2);
+                position: absolute;
+                margin: 24px auto 16px auto;
+                @include breackpoint(medium){
+                    display: none;
+                }
+        }
+    }
+    &__title{
+        font-size: rem(24);
+        margin-bottom: rem(3);
+        line-height: 1.1;
+        @include breackpoint(large){
+            font-size: rem(28);
+        }
+        
+    }
+
+    &__subtitle{
+        font-size: rem(14);
+        color: var(--text-color2);
+        font-weight: 700;
+    }
+    
+}
