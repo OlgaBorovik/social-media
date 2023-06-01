@@ -7,9 +7,10 @@
     @include breackpoint(medium){
         display: flex;
         justify-content: space-between;
-        margin-top: rem(36);
-        margin-bottom: 46px;
         padding-top: 0;
+        margin-top: rem(36);
+        margin-bottom: rem(46);
+        
     }
     &__box{
         margin-bottom: 41px;

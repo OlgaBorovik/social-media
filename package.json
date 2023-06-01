@@ -5,7 +5,7 @@
   "homepage": "https://OlgaBorovik.github.io/social-media",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /social-media/"
   },
   "repository": {
     "type": "git",
