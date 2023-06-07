@@ -2,8 +2,10 @@
 
 .container{
     max-width: rem(1110);
-    padding: 0 rem(25);
-    margin: 0 auto;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin-left: auto;
+    margin-right: auto;
 
     @include breackpoint (large){
         padding: 0;
